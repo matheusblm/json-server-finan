@@ -6,6 +6,13 @@
       "name": "cliente1",
       "age": 31,
       "id": 1
+    },
+    {
+      "email": "cliente2@mail.com",
+      "password": "$2a$10$5s3uyYYWFcrjgEe4ZMkmbeOsdAZVyUvVpEMsgmv3bOOrFq/VTOeT.",
+      "name": "cliente2",
+      "age": 25,
+      "id": 2
     }
   ],
   "receive": [
@@ -28,7 +35,7 @@
   ],
   "account": [
     {
-      "value": 200,
+      "value": 2000,
       "account": "conta bancária",
       "category": "Banco do Brasil",
       "userId": 1,
