@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "email": "cliente1@mail.com",
+      "password": "$2a$10$uofWM26y.DKrWvZ3DztU1urp80Zf83NIrvaNZpdq8tC8c26qMqMbe",
+      "name": "cliente1",
+      "age": 31,
+      "id": 1
+    }
+  ],
+  "receive": [
+    {
+      "value": 100,
+      "account": "conta bancária",
+      "category": "venda de ações",
+      "userId": 1,
+      "id": 1
+    }
+  ],
+  "spend": [
+    {
+      "value": 200,
+      "account": "conta bancária",
+      "category": "cartão Banco do Brasil",
+      "userId": 1,
+      "id": 1
+    }
+  ],
+  "account": [
+    {
+      "value": 200,
+      "account": "conta bancária",
+      "category": "Banco do Brasil",
+      "userId": 1,
+      "id": 1
+    }
+  ]
+}
