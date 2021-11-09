@@ -45,6 +45,7 @@ Authorization: Bearer token
   "value": 20.0,
   "account": "Empréstimos",
   "category": "Férias",
+  "description": "Bradesco",
   "type": true,
   "date": "08-11-21",
   "userId": 1
@@ -61,6 +62,7 @@ Authorization: Bearer token
     "value": 20.0,
     "account": "Empréstimos",
     "category": "Férias",
+    "description": "Bradesco",
     "type": true,
     "date": "08-11-21",
     "userId": 1,
@@ -79,6 +81,7 @@ Authorization: Bearer token
     "value": 20.0,
     "account": "Empréstimos",
     "category": "Férias",
+    "description": "Bradesco",
     "type": true,
     "date": "08-11-21",
     "userId": 1,
@@ -97,13 +100,14 @@ Authorization: Bearer token
 
 ```json
 {
-  "value": 20.00,
-    "account": "Empréstimos atualisado",
-    "category": "Férias",
-    "type": false,
-    "date": "08-11-21",
-    "userId": 1,
-    "id": 1
+  "value": 20.0,
+  "account": "Empréstimos atualizado",
+  "category": "Férias",
+  "description": "Bradesco",
+  "type": false,
+  "date": "08-11-21",
+  "userId": 1,
+  "id": 1
 }
 ```
 
@@ -130,6 +134,7 @@ Authorization: Bearer token
   "value": 20.0,
   "account": "Empréstimos",
   "category": "Férias",
+  "description": "Bradesco",
   "type": true,
   "date": "08-11-21",
   "userId": 1
@@ -146,6 +151,7 @@ Authorization: Bearer token
     "value": 20.0,
     "account": "Empréstimos",
     "category": "Férias",
+    "description": "Bradesco",
     "type": true,
     "date": "08-11-21",
     "userId": 1,
@@ -164,6 +170,7 @@ Authorization: Bearer token
     "value": 20.0,
     "account": "Empréstimos",
     "category": "Férias",
+    "description": "Bradesco",
     "type": true,
     "date": "08-11-21",
     "userId": 1,
@@ -182,13 +189,14 @@ Authorization: Bearer token
 
 ```json
 {
-  "value": 20.00,
-    "account": "Empréstimos atualisado",
-    "category": "Férias",
-    "type": false,
-    "date": "08-11-21",
-    "userId": 1,
-    "id": 1
+  "value": 20.0,
+  "account": "Empréstimos atualizado",
+  "category": "Férias",
+  "description": "Bradesco",
+  "type": false,
+  "date": "08-11-21",
+  "userId": 1,
+  "id": 1
 }
 ```
 
