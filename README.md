@@ -115,7 +115,7 @@ header {
 Authorization: Bearer token
 }
 
-## receive
+## Receive
 
 ### create new receive
 
@@ -200,7 +200,7 @@ header {
 Authorization: Bearer token
 }
 
-## spend
+## Spend
 
 ### create new spend
 
