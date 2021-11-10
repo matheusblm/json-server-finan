@@ -1,70 +1,209 @@
-# Getting Started with Create React App
+# react-atividade-s5-template-JSON-Server
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Base_URL
 
-## Available Scripts
+https://localhost:3001/
 
-In the project directory, you can run:
+## Users
 
-### `yarn start`
+### Cadastro
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+POST /register
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```json
+{
+  "email": "usuario@email.com",
+  "password": "123456",
+  "name": "Usuario",
+  "age": 41
+}
+```
 
-### `yarn test`
+### Login
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`POST /login`
 
-### `yarn build`
+```json
+{
+  "email": "usuario@email.com",
+  "password": "123456"
+}
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Receive
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### create new receive
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`Post /receive`
 
-### `yarn eject`
+header {
+Authorization: Bearer token
+}
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```json
+{
+  "value": 20.0,
+  "account": "Empréstimos",
+  "category": "Férias",
+  "description": "Bradesco",
+  "type": true,
+  "date": "08-11-21",
+  "userId": 1
+}
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### get receive
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`GET /receive`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```json
+[
+  {
+    "value": 20.0,
+    "account": "Empréstimos",
+    "category": "Férias",
+    "description": "Bradesco",
+    "type": true,
+    "date": "08-11-21",
+    "userId": 1,
+    "id": 1
+  }
+]
+```
 
-## Learn More
+### get only receive
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`GET /receive/:id`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```json
+[
+  {
+    "value": 20.0,
+    "account": "Empréstimos",
+    "category": "Férias",
+    "description": "Bradesco",
+    "type": true,
+    "date": "08-11-21",
+    "userId": 1,
+    "id": 1
+  }
+]
+```
 
-### Code Splitting
+### update receive
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+`PATCH /receive/:id`
 
-### Analyzing the Bundle Size
+header {
+Authorization: Bearer token
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```json
+{
+  "value": 20.0,
+  "account": "Empréstimos atualizado",
+  "category": "Férias",
+  "description": "Bradesco",
+  "type": false,
+  "date": "08-11-21",
+  "userId": 1,
+  "id": 1
+}
+```
 
-### Making a Progressive Web App
+### delete receive
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+`DELETE /receive/:id`
 
-### Advanced Configuration
+header {
+Authorization: Bearer token
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Spend
 
-### Deployment
+### create new spend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+`Post /spend`
 
-### `yarn build` fails to minify
+header {
+Authorization: Bearer token
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```json
+{
+  "value": 20.0,
+  "account": "Empréstimos",
+  "category": "Férias",
+  "description": "Bradesco",
+  "type": true,
+  "date": "08-11-21",
+  "userId": 1
+}
+```
+
+### get spend
+
+`GET /spend`
+
+```json
+[
+  {
+    "value": 20.0,
+    "account": "Empréstimos",
+    "category": "Férias",
+    "description": "Bradesco",
+    "type": true,
+    "date": "08-11-21",
+    "userId": 1,
+    "id": 1
+  }
+]
+```
+
+### get only spend
+
+`GET /spend/:id`
+
+```json
+[
+  {
+    "value": 20.0,
+    "account": "Empréstimos",
+    "category": "Férias",
+    "description": "Bradesco",
+    "type": true,
+    "date": "08-11-21",
+    "userId": 1,
+    "id": 1
+  }
+]
+```
+
+### update spend
+
+`PATCH /spend/:id`
+
+header {
+Authorization: Bearer token
+}
+
+```json
+{
+  "value": 20.0,
+  "account": "Empréstimos atualizado",
+  "category": "Férias",
+  "description": "Bradesco",
+  "type": false,
+  "date": "08-11-21",
+  "userId": 1,
+  "id": 1
+}
+```
+
+### delete spend
+
+`DELETE /spend/:id`
+
+header {
+Authorization: Bearer token
+}
