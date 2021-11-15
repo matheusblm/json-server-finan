@@ -32,5 +32,13 @@
       "userId": 1,
       "id": 1
     }
+  ],
+  "wallet": [
+    {
+      "value": 200,
+      "bank": "Nubank",
+      "userId": 1,
+      "id": 1
+    }
   ]
 }

@@ -2,7 +2,7 @@
 
 ## Base_URL
 
-https://json-server-finan.herokuapp.com
+https://localhost:3001/
 
 ## Users
 
@@ -54,7 +54,7 @@ Authorization: Bearer token
 
 ### get receive
 
-`GET /receive`
+`GET /receive/?userId=:id`
 
 ```json
 [
@@ -143,7 +143,7 @@ Authorization: Bearer token
 
 ### get spend
 
-`GET /spend`
+`GET /spend/?userId=:id`
 
 ```json
 [
@@ -203,6 +203,79 @@ Authorization: Bearer token
 ### delete spend
 
 `DELETE /spend/:id`
+
+header {
+Authorization: Bearer token
+}
+
+## Wallet
+
+### create new wallet
+
+`Post /wallet`
+
+header {
+Authorization: Bearer token
+}
+
+```json
+{
+  "value": 200,
+  "bank": "Nubank",
+  "userId": 1
+}
+```
+
+### get wallet
+
+`GET /wallet/?userId=:id`
+
+```json
+[
+  {
+    "value": 200,
+    "bank": "Nubank",
+    "userId": 1,
+    "id": 1
+  }
+]
+```
+
+### get only wallet
+
+`GET /wallet/:id`
+
+```json
+[
+  {
+    "value": 200,
+    "bank": "Nubank",
+    "userId": 1,
+    "id": 1
+  }
+]
+```
+
+### update wallet
+
+`PATCH /wallet/:id`
+
+header {
+Authorization: Bearer token
+}
+
+```json
+{
+  "value": 200,
+  "bank": "Nubank",
+  "userId": 1,
+  "id": 1
+}
+```
+
+### delete wallet
+
+`DELETE /wallet/:id`
 
 header {
 Authorization: Bearer token
