@@ -53,7 +53,8 @@
       "lazer": 0,
       "roupas": 0,
       "transportes": 0,
-      "outros": 0
+      "outros": 0,
+      "userId": 1
     }
   ]
 }
