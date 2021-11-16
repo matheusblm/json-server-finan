@@ -12,7 +12,8 @@ const rules = auth.rewriter({
   users: 600,
   receive: 600,
   spend: 600,
-  wallet: 600
+  wallet: 600,
+  limit: 600
 });
 
 app.use(cors());

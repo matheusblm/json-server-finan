@@ -280,3 +280,78 @@ Authorization: Bearer token
 header {
 Authorization: Bearer token
 }
+
+## Limit
+
+### create new limit
+
+`Post /limit`
+
+header {
+Authorization: Bearer token
+}
+
+```json
+{
+  "alimentacao": 0,
+  "casa": 0,
+  "assinaturas": 0,
+  "bares": 0,
+  "educacao": 0,
+  "familia": 0,
+  "impostos": 0,
+  "lazer": 0,
+  "roupas": 0,
+  "transportes": 0,
+  "outros": 0,
+  "userId": 1
+}
+```
+
+### get limit
+
+`GET /limit/?userId=:id`
+
+```json
+[
+  {
+    "alimentacao": 0,
+    "casa": 0,
+    "assinaturas": 0,
+    "bares": 0,
+    "educacao": 0,
+    "familia": 0,
+    "impostos": 0,
+    "lazer": 0,
+    "roupas": 0,
+    "transportes": 0,
+    "outros": 0,
+    "userId": 1,
+    "id": 1
+  }
+]
+```
+
+### update limit
+
+`PATCH /limit/:id`
+
+header {
+Authorization: Bearer token
+}
+
+```json
+{
+  "alimentacao": 1000.00,
+  "userId": 1,
+  "id": 1
+}
+```
+
+### delete limit
+
+`DELETE /limit/:id`
+
+header {
+Authorization: Bearer token
+}
