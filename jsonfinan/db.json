@@ -13,6 +13,69 @@
       "name": "cliente2",
       "age": 25,
       "id": 2
+    },
+    {
+      "email": "teste@gmail.com",
+      "password": "$2a$10$qC2LiGP7LEYTIn7b.nmo9.aaQUIiDmX0UofEvQeuqyiSKmgrO644a",
+      "username": "teste",
+      "passwordConfirm": "123aA@",
+      "id": 3
+    },
+    {
+      "email": "dev@mail.com",
+      "password": "$2a$10$VKRYQ4Z.4jl53/FlLVYZzuBa0wcPB7h2RveiFoOeagaoYPdIjRG/a",
+      "username": "dev",
+      "passwordConfirm": "123aA@",
+      "id": 4
+    },
+    {
+      "email": "kamui@gmail.com",
+      "password": "$2a$10$Qw6/WdfdyA0ZKn9CLaawoet0GnjmHAHryG8TPI4sPNkMrpu16SQA6",
+      "username": "Kamui",
+      "passwordConfirm": "123aA@",
+      "id": 5
+    },
+    {
+      "email": "kenzinho@teste.com",
+      "password": "$2a$10$HH0RbDigJyGCqqfLShRxTOJlvQ7kkYavwFOMY5rHVr4XCX.0SjyLe",
+      "username": "kenzinho",
+      "passwordConfirm": "123aA@",
+      "id": 6
+    },
+    {
+      "email": "cliente4@mail.com",
+      "password": "$2a$10$I0BTGQS/DRoh19.lv8RQL.1b6BvZjuEvEraBE0BH0/qTkCS0mR/1C",
+      "name": "Rafa",
+      "age": 31,
+      "limits": [
+        {
+          "casa": 0,
+          "pet": 0,
+          "alimentação": 0,
+          "assinaturas": 0
+        }
+      ],
+      "id": 7,
+      "casa": 100,
+      "limits[0]": 100
+    },
+    {
+      "email": "cliente5@mail.com",
+      "password": "$2a$10$dKm1hAbVFi4rJ9Ggl8m9H.xni7fka3y0IPZc/Ot10T8XmdLHijXkS",
+      "name": "cliente5",
+      "age": 31,
+      "id": 8
+    },
+    {
+      "email": "cliente6@mail.com",
+      "password": "$2a$10$9I1J2DeI8tPDu5VJvx8fFesGC83lntR5pb5mpif9.JJV2WeyXOX2q",
+      "name": "cliente6",
+      "age": 31,
+      "limits": {
+        "casa": 0,
+        "alimentação": 0
+      },
+      "id": 9
     }
   ],
   "receive": [
@@ -22,6 +85,187 @@
       "category": "venda de ações",
       "userId": 1,
       "id": 1
+    },
+    {
+      "value": 100,
+      "account": "conta bancária",
+      "category": "venda de ações",
+      "decription": "Banco Bradesco",
+      "type": true,
+      "data": "14/11/21",
+      "userId": 3,
+      "id": 2
+    },
+    {
+      "value": 5000,
+      "account": "conta bancária",
+      "category": "salário",
+      "decription": "Caixa Econômica Federal",
+      "type": true,
+      "data": "14/11/21",
+      "userId": 3,
+      "id": 3
+    },
+    {
+      "value": 5000,
+      "account": "Conta Bancária",
+      "category": "venda de parte das férias",
+      "decription": "Caixa Econômica Federal",
+      "type": true,
+      "data": "14/11/21",
+      "userId": 3,
+      "id": 4
+    },
+    {
+      "value": 5000,
+      "account": "Conta Bancária",
+      "category": "venda de parte das férias",
+      "decription": "Caixa Econômica Federal",
+      "type": true,
+      "data": "12/11/21",
+      "userId": 4,
+      "id": 5
+    },
+    {
+      "title": "aaa",
+      "description": "aaa",
+      "value": "20",
+      "data": "01-12-21",
+      "categorie": "salario",
+      "userId": 4,
+      "id": 6
+    },
+    {
+      "title": "ccc",
+      "description": "ccc",
+      "value": "20",
+      "data": "01-12-21",
+      "categorie": "salario",
+      "userId": 4,
+      "id": 7
+    },
+    {
+      "title": "eee",
+      "description": "eee",
+      "value": "500",
+      "data": "01-12-21",
+      "categorie": "salario",
+      "userId": 4,
+      "id": 8
+    },
+    {
+      "title": "fff",
+      "description": "ffff",
+      "value": "500",
+      "data": "01-12-21",
+      "categorie": "salario",
+      "userId": 4,
+      "id": 9
+    },
+    {
+      "title": "banco",
+      "description": "banco bradesco",
+      "value": "500",
+      "data": "30-11-21",
+      "categorie": "salario",
+      "userId": "4",
+      "id": 10
+    },
+    {
+      "title": "banco",
+      "description": "banco bradesco",
+      "value": "501",
+      "data": "30-11-21",
+      "categorie": "salario",
+      "userId": "4",
+      "id": 11
+    },
+    {
+      "title": "venda de curso",
+      "description": "curso",
+      "value": "501",
+      "data": "01-12-21",
+      "categorie": "dividendos",
+      "userId": 4,
+      "id": 12
+    },
+    {
+      "title": "titulo1",
+      "description": "desc1",
+      "value": 1,
+      "data": "01-12-21",
+      "category": "salario",
+      "userId": 4,
+      "id": 13
+    },
+    {
+      "title": "titulo1",
+      "description": "desc1",
+      "value": 1,
+      "data": "01-12-21",
+      "category": "salario",
+      "type": true,
+      "userId": 4,
+      "id": 14
+    },
+    {
+      "title": "titulo2",
+      "description": "descri2",
+      "value": 2,
+      "data": "30-11-21",
+      "category": "dividendos",
+      "type": true,
+      "userId": 4,
+      "id": 15
+    },
+    {
+      "description": "Venda de um app",
+      "value": 10000,
+      "data": "30-11-21",
+      "category": "extras",
+      "type": true,
+      "userId": 4,
+      "id": 16
+    },
+    {
+      "account": "conta bancária",
+      "description": "venda de um celular",
+      "value": 1500,
+      "data": "20/11/2021",
+      "category": "extras",
+      "type": false,
+      "userId": 4,
+      "id": 17
+    },
+    {
+      "account": "Venda de um notebook",
+      "description": "venda de um notebook",
+      "value": 2500,
+      "data": "01-12-21",
+      "category": "extras",
+      "type": false,
+      "userId": 4,
+      "id": 18
+    },
+    {
+      "account": "conta bancária",
+      "description": "venda",
+      "value": 1500,
+      "data": "2021-12-01",
+      "category": "extras",
+      "type": true,
+      "userId": 5,
+      "id": 19
+    },
+    {
+      "account": "conta bancária",
+      "description": "venda",
+      "value": 500,
+      "data": "2021-11-18",
+      "category": "extras",
+      "type": true,
+      "userId": 6,
+      "id": 20
     }
   ],
   "spend": [
@@ -31,6 +275,151 @@
       "category": "cartão Banco do Brasil",
       "userId": 1,
       "id": 1
+    },
+    {
+      "value": 200,
+      "account": "conta bancária",
+      "category": "cartão Santander",
+      "userId": 3,
+      "id": 2
+    },
+    {
+      "value": 120,
+      "account": "Conta Bancária",
+      "category": "cartão visa",
+      "decription": "cartão de credito",
+      "type": true,
+      "data": "21-11-20",
+      "userId": 3,
+      "id": 3
+    },
+    {
+      "value": 120,
+      "account": "Conta Bancária",
+      "category": "cartão visa",
+      "decription": "cartão de credito",
+      "type": true,
+      "data": "21-11-20",
+      "userId": 4,
+      "id": 4
+    },
+    {
+      "title": "bbb",
+      "description": "bbb",
+      "value": "20",
+      "data": "01-12-21",
+      "categorie": "salario",
+      "userId": 4,
+      "id": 5
+    },
+    {
+      "title": "ddd",
+      "description": "ddd",
+      "value": "20",
+      "data": "01-12-21",
+      "categorie": "dividendos",
+      "userId": 4,
+      "id": 6
+    },
+    {
+      "account": "energia",
+      "description": "conta de energia",
+      "value": 500,
+      "data": "28-11-2021",
+      "category": "dividendos",
+      "type": true,
+      "userId": 4,
+      "id": 7
+    },
+    {
+      "account": "carteira",
+      "description": "Multa",
+      "value": 323,
+      "data": "30-11-21",
+      "category": "extras",
+      "type": true,
+      "userId": 4,
+      "id": 8
+    },
+    {
+      "account": "internet",
+      "description": "Pacote de internet",
+      "value": 200,
+      "data": "30-11-21",
+      "category": "dividendos",
+      "type": true,
+      "userId": 4,
+      "id": 9
+    },
+    {
+      "account": "energia",
+      "description": "Consumo de energia",
+      "value": 500,
+      "data": "30-11-21",
+      "category": "dividendos",
+      "type": false,
+      "userId": 4,
+      "id": 10
+    },
+    {
+      "account": "Cartão de Credito",
+      "description": "Compra de roupas",
+      "value": 1000,
+      "data": "30-11-21",
+      "category": "dividendos",
+      "type": false,
+      "userId": 4,
+      "id": 11
+    },
+    {
+      "account": "energia",
+      "description": "Consumo de energia",
+      "value": 500,
+      "data": "2021-11-18",
+      "category": "casa",
+      "type": true,
+      "userId": 5,
+      "id": 12
+    },
+    {
+      "account": "internet",
+      "description": "Pacote de Internet",
+      "value": 200,
+      "data": "2021-11-25",
+      "category": "assinaturas",
+      "type": false,
+      "userId": 5,
+      "id": 13
+    },
+    {
+      "account": "internet",
+      "description": "Consumo de internet",
+      "value": 200,
+      "data": "2021-11-18",
+      "category": "assinaturas",
+      "type": true,
+      "userId": 6,
+      "id": 14
+    }
+  ],
+  "account": [
+    {
+      "account": "Banco do Brasil",
+      "saldo": 1500,
+      "userId": 4,
+      "id": 1
+    },
+    {
+      "account": "Carteira",
+      "saldo": 5500,
+      "userId": 4,
+      "id": 2
+    },
+    {
+      "bank": "Banco do Brasil",
+      "over": 3000,
+      "userId": 21,
+      "id": 3
     }
   ]
 }
